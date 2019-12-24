@@ -1,2 +1,7 @@
 .idea/
 media/
+.gitignore
+venv
+.idea
+db.sqlite3
+mysite/__pycache__/

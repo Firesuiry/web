@@ -34,4 +34,5 @@ def delete_file(request, pk):
     if request.method == 'POST':
         sfile = file.objects.get(pk=pk)
         sfile.delete()
-    return redirect('file/')
+    url = reverse_lazy('file:file_list')
+    return redirect(url)
